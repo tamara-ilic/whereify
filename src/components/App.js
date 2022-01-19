@@ -1,5 +1,6 @@
 import { useContext } from 'react';
 import { UserContext } from '../contexts/UserContext'
+import Flag from './Flag'
 import '../styles/App.css'
 
 function App() {
@@ -11,7 +12,8 @@ function App() {
     <div className="App">
       <h1>Whereify</h1>
       <p>{ip}</p>
-      {region}, {country}
+      <p>{region}, {country}</p>
+      <Flag />
     </div>
   );
 }
