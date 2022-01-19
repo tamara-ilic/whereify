@@ -13,8 +13,8 @@ export default function AppMap() {
   console.log('::lat, lng', lat, lng)
 
   return (
-    <Map height={300} center={center} zoom={zoom}
-      onBoundsChanged={({ center }) => {
+    <Map height={300} width={50} center={center} zoom={zoom}
+      onBoundsChanged={({ center, zoom }) => {
         setCenter(center)
         setZoom(zoom)
       }}>

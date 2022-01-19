@@ -13,7 +13,6 @@ function App() {
       <p>{ip}</p>
       <p>{region}, {country}</p>
       <Flag />
-      {region}, {country}
       <AppMap />
     </div>
   );
