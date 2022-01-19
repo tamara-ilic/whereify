@@ -12,7 +12,13 @@ const UserContextProvider = ({ children }) => {
   }, [])
 
   return (
-    <UserContext.Provider value={{ ip:userGeoIpData?userGeoIpData.ip : null, region:userGeoIpData?userGeoIpData.location.region:null, country:userGeoIpData?userGeoIpData.location.country:null}}>
+    <UserContext.Provider value={{ 
+      ip: userGeoIpData?userGeoIpData.ip : null,
+      region: userGeoIpData?userGeoIpData.location.region:null,
+      country: userGeoIpData?userGeoIpData.location.country:null,
+      lat: userGeoIpData?userGeoIpData.location.lat:null,
+      lng: userGeoIpData?userGeoIpData.location.lng:null
+      }}>
         {children}
     </UserContext.Provider>
   )

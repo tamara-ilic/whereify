@@ -1,12 +1,11 @@
 import { useContext } from 'react';
 import { UserContext } from '../contexts/UserContext'
 import Flag from './Flag'
+import AppMap from './AppMap'
 import '../styles/App.css'
 
 function App() {
-  const {ip, region, country } = useContext(UserContext)
-  
-  // const { userGeoIpData } = useContext(UserContext)
+  const { ip, region, country } = useContext(UserContext)
   
   return (
     <div className="App">
@@ -14,6 +13,8 @@ function App() {
       <p>{ip}</p>
       <p>{region}, {country}</p>
       <Flag />
+      {region}, {country}
+      <AppMap />
     </div>
   );
 }
