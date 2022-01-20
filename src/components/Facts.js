@@ -1,8 +1,6 @@
 import { useContext, useState, useEffect } from 'react';
 import { UserContext } from '../contexts/UserContext';
 
-
-
 function Facts() {
   const [countryInfo, setCountryInfo] = useState(null);
   const apiKey = "KD3b4lvNXamL6+jKLj8Vsg==JO4gqlzPjilqi6Ls";
