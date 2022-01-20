@@ -18,7 +18,7 @@ const UserContextProvider = ({ children }) => {
       country: userGeoIpData?userGeoIpData.location.country:null,
       lat: userGeoIpData?userGeoIpData.location.lat:null,
       lng: userGeoIpData?userGeoIpData.location.lng:null
-      }}>
+    }}>
         {children}
     </UserContext.Provider>
   )

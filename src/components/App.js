@@ -10,8 +10,8 @@ function App() {
   return (
     <div className="App">
       <h1>Whereify</h1>
-      <p>{ip}</p>
-      <p>{region}, {country}</p>
+        <p>{ip}</p>
+        <p>{region}, {country}</p>
       <Flag />
       <AppMap />
     </div>

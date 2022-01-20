@@ -4,18 +4,15 @@ import { UserContext } from '../contexts/UserContext'
 import { Map, Marker } from 'pigeon-maps'
 
 export default function AppMap() {
-  const [center, setCenter] = useState([50.879, 4.6997])
-  const [zoom, setZoom] = useState(11)
-
   const { lat, lng } = useContext(UserContext)
 
-  console.log('::center', center)
-  console.log('::lat, lng', lat, lng)
+  const [center, setCenter] = useState([lat, lng])
+  const [zoom, setZoom] = useState(11)
 
   return (
-    <Map height={300} width={50} center={center} zoom={zoom}
+    <Map height={300} center={center} zoom={zoom}
       onBoundsChanged={({ center, zoom }) => {
-        setCenter(center)
+        setCenter([lat, lng])
         setZoom(zoom)
       }}>
       <Marker width={50} anchor={[lat, lng]} />
