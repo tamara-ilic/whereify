@@ -6,13 +6,19 @@ const UserContextProvider = ({ children }) => {
   const [userGeoIpData, setUserGeoIpData] = useState(null)
 
   useEffect(() => {
-    fetch(`https://geo.ipify.org/api/v2/country?apiKey=${process.env.REACT_APP_IPIFY_API_KEY}`)
+    fetch(`https://geo.ipify.org/api/v2/country,city?apiKey=${process.env.REACT_APP_IPIFY_API_KEY}`)
     .then(res => res.json())
     .then(data => setUserGeoIpData(data))
   }, [])
 
   return (
-    <UserContext.Provider value={{ ip:userGeoIpData?userGeoIpData.ip : null, region:userGeoIpData?userGeoIpData.location.region:null, country:userGeoIpData?userGeoIpData.location.country:null}}>
+    <UserContext.Provider value={{ 
+      ip: userGeoIpData?userGeoIpData.ip : null,
+      region: userGeoIpData?userGeoIpData.location.region:null,
+      country: userGeoIpData?userGeoIpData.location.country:null,
+      lat: userGeoIpData?userGeoIpData.location.lat:null,
+      lng: userGeoIpData?userGeoIpData.location.lng:null
+    }}>
         {children}
     </UserContext.Provider>
   )
