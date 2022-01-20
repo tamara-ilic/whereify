@@ -6,10 +6,10 @@ import { UserContext } from '../contexts/UserContext';
 function Facts() {
   const [countryInfo, setCountryInfo] = useState(null);
   const apiKey = "KD3b4lvNXamL6+jKLj8Vsg==JO4gqlzPjilqi6Ls";
-  const {country } = useContext(UserContext)
+  const { country } = useContext(UserContext)
 
   useEffect(() => {
-    fetch(`https://api.api-ninjas.com/v1/country?name=${country}`, {
+    if(country){fetch(`https://api.api-ninjas.com/v1/country?name=${country}`, {
       method: 'get',
       headers: new Headers ({
         'X-Api-Key': apiKey
@@ -19,10 +19,10 @@ function Facts() {
     .then((result) => {
       setCountryInfo(result[0]);
       console.log(result[0]);
-    });
-  }, []);
+    });}
+  }, [country]);
 
-
+ 
   return (
     <div>
       <h3>Facts About Your Location</h3>
