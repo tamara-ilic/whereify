@@ -10,12 +10,15 @@ export default function AppMap() {
   const [zoom, setZoom] = useState(11)
 
   return (
-    <Map height={300} center={center} zoom={zoom}
-      onBoundsChanged={({ center, zoom }) => {
-        setCenter([lat, lng])
-        setZoom(zoom)
+    <div className='map-container'>
+      <Map height={300} center={center} zoom={zoom}
+        onBoundsChanged={({ center, zoom }) => {
+          setCenter([lat, lng])
+          setZoom(zoom)
       }}>
-      <Marker width={50} anchor={[lat, lng]} />
-    </Map>
+        <Marker width={50} anchor={[lat, lng]} />
+      </Map>
+    </div>
+    
   )
 }
