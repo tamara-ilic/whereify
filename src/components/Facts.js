@@ -4,14 +4,13 @@ import Flag from './Flag'
 
 function Facts() {
   const [countryInfo, setCountryInfo] = useState(null);
-  const apiKey = "KD3b4lvNXamL6+jKLj8Vsg==JO4gqlzPjilqi6Ls";
   const { country } = useContext(UserContext)
 
   useEffect(() => {
     if(country){fetch(`https://api.api-ninjas.com/v1/country?name=${country}`, {
       method: 'get',
       headers: new Headers ({
-        'X-Api-Key': apiKey
+        'X-Api-Key': process.env.REACT_APP_API_NINJA_API_KEY
       })
     })
     .then((res) => res.json())
