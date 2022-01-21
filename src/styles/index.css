@@ -1,28 +1,28 @@
-@import url("https://fonts.googleapis.com/css2?family=Neonderthaw&family=Red+Hat+Display&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Neonderthaw&family=Red+Hat+Display&display=swap');
 
 * {
-  box-sizing: border-box;
+	box-sizing: border-box;
 }
 
 body {
-  background-color: #250b48;
-  color: #fff;
-  margin: 0;
-  font-family: "Red Hat Display", sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
-  overflow: hidden;
+	align-items: center;
+	background-color: #250b48;
+	color: #fff;
+	display: flex;
+	font-family: 'Red Hat Display',
+		sans-serif;
+	justify-content: center;
+	margin: 0;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+	font-family: source-code-pro, Menlo,
+		Monaco, Consolas, 'Courier New',
+		monospace;
 }
 
 #root {
-  width: 65%;
+	width: 65%;
 }

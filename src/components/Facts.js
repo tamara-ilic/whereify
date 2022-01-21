@@ -26,13 +26,13 @@ function Facts() {
     <div>
       <h3>Facts About Your Location</h3>
       <ul>{countryInfo?
-        <div>
-        <li>Country Name: {countryInfo.name} <Flag /></li>
-        <li>Capital: {countryInfo.capital}</li>
-        <li>Currency: {countryInfo.currency.name}</li>
-        <li>Male Life Expectancy: {countryInfo.life_expectancy_male} years</li>
-        <li>Female Life Expectancy: {countryInfo.life_expectancy_female} years</li>
-        </div>
+            <>
+              <li><strong>Country:</strong> {countryInfo.name} <Flag /></li>
+              <li><strong>Capital:</strong> {countryInfo.capital}</li>
+              <li><strong>Currency:</strong> {countryInfo.currency.name}</li>
+              <li><strong>Male Life Expectancy:</strong> {countryInfo.life_expectancy_male} years</li>
+              <li><strong>Female Life Expectancy:</strong> {countryInfo.life_expectancy_female} years</li>
+            </>
         :null}
       </ul>
     </div>

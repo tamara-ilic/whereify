@@ -12,7 +12,7 @@ export default function AppMap() {
   return (
     <div className='map-container'>
       {lat && (
-        <Map height={300} center={center} zoom={zoom}
+        <Map height={200} center={center} zoom={zoom}
           onBoundsChanged={({ center, zoom }) => {
             setCenter([lat, lng])
             setZoom(zoom)

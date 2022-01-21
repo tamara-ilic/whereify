@@ -1,74 +1,82 @@
-@import url("https://fonts.googleapis.com/css2?family=Neonderthaw&family=Red+Hat+Display&family=Sedgwick+Ave&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Neonderthaw&family=Red+Hat+Display&family=Sedgwick+Ave&display=swap');
 
 .App {
-  margin: auto;
-  padding-top: 0.2rem;
-  padding-bottom: 2rem;
-  border-radius: 25px;
-  text-align: center;
-  width: 100%;
-  background-color: #21064b;
-  box-shadow: 2px 2px 30px 1px rgba(237, 37, 78, 0.2);
+	background-color: #21064b;
+	border-radius: 25px;
+	box-shadow: 2px 2px 30px 1px
+		rgba(237, 37, 78, 0.2);
+	margin: auto;
+	padding: 0.2rem 0 2rem 0;
+	text-align: center;
+	width: 100%;
 }
 
 .map-container {
-  margin: 2rem auto;
-  width: 100%;
+	margin: 1.5rem auto;
+	width: 100%;
 }
 
 @media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+	.App-logo {
+		animation: App-logo-spin infinite
+			20s linear;
+	}
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+	align-items: center;
+	background-color: #282c34;
+	color: white;
+	display: flex;
+	flex-direction: column;
+	font-size: calc(10px + 2vmin);
+	justify-content: center;
+	min-height: 100vh;
 }
 
 .App-link {
-  color: #61dafb;
+	color: #61dafb;
 }
 
 @keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(360deg);
+	}
 }
 
 h1 {
-  font-family: "Neonderthaw", cursive;
-  color: #faf443;
-  text-shadow: /* 0 0 10px #f9bec7,*/ 0 0 21px #fff,
-    /*0 0 42px #f9bec7,*/ 0 0 82px #faf443;
-  font-size: 3rem;
+	color: #faf443;
+	font-family: 'Neonderthaw', cursive;
+	font-size: 3rem;
+	text-shadow: /* 0 0 10px #f9bec7,*/ 0
+			0 21px #fff,
+		/*0 0 42px #f9bec7,*/ 0 0 82px
+			#faf443;
 }
 
 h3 {
-  font-family: "Sedgwick Ave", cursive;
-  color: #faf443;
-  font-size: 1.2rem;
+	color: #faf443;
+	font-family: 'Sedgwick Ave', cursive;
+	font-size: 1.2rem;
 }
 
 p {
-  line-height: 0.7rem;
+	line-height: 0.7rem;
 }
 
 ul {
-  margin: 0;
-  padding: 0;
+	margin: 0;
+	padding: 0;
 }
 
 li {
-  list-style-type: none;
+	list-style-type: none;
+}
+
+.flag {
+	border: 2px solid white;
+	margin-left: 0.5rem;
 }

@@ -6,7 +6,7 @@ function Flag() {
   const { country } = useContext(UserContext)
 
   return (
-    <img src={country?`https://flagcdn.com/20x15/${country.toLowerCase()}.png`:''} alt="country flag"></img>
+    <img className='flag' src={country?`https://flagcdn.com/20x15/${country.toLowerCase()}.png`:''} alt="country flag"></img>
   );
 
 }

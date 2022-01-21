@@ -15,10 +15,10 @@ function App() {
   return (
     <div className="App">
       <h1>Whereify</h1>
-        <p>Your Public IP Address is: {ip}</p>
-        <p>Your Current Location is: {region}, {country}</p>
-        <p>Your local time is {time24hrClock}</p>
-        <p>Time zone: {timeZone}</p>
+        <p><strong>Your Public IP Address is:</strong> {ip}</p>
+        <p><strong>Your Current Location is:</strong> {region}, {country}</p>
+        <p><strong>Your local time is</strong> {time24hrClock}</p>
+        <p><strong>Time zone:</strong> {timeZone}</p>
       <AppMap />
       <Facts />
     </div>
