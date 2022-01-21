@@ -1,6 +1,5 @@
 import { useContext } from 'react';
 import { UserContext } from '../contexts/UserContext'
-import Flag from './Flag'
 import AppMap from './AppMap'
 import Facts from './Facts'
 import { DateTime } from 'luxon'
@@ -16,11 +15,10 @@ function App() {
   return (
     <div className="App">
       <h1>Whereify</h1>
-        <p>{ip}</p>
-        <p>{region}, {country}</p>
+        <p>Your Public IP Address is: {ip}</p>
+        <p>Your Current Location is: {region}, {country}</p>
         <p>Your local time is {time24hrClock}</p>
         <p>Time zone: {timeZone}</p>
-      <Flag />
       <AppMap />
       <Facts />
     </div>

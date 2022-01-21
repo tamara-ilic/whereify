@@ -1,5 +1,6 @@
 import { useContext, useState, useEffect } from 'react';
 import { UserContext } from '../contexts/UserContext';
+import Flag from './Flag'
 
 function Facts() {
   const [countryInfo, setCountryInfo] = useState(null);
@@ -26,7 +27,7 @@ function Facts() {
       <h3>Facts About Your Location</h3>
       <ul>{countryInfo?
         <div>
-        <li>Country Name: {countryInfo.name}</li>
+        <li>Country Name: {countryInfo.name} <Flag /></li>
         <li>Capital: {countryInfo.capital}</li>
         <li>Currency: {countryInfo.currency.name}</li>
         <li>Male Life Expectancy: {countryInfo.life_expectancy_male} years</li>
