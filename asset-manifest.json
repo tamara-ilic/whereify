@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/whereify/static/css/main.d3d0d066.css",
+    "main.js": "/whereify/static/js/main.ef1b2b98.js",
+    "static/js/787.5b6c555d.chunk.js": "/whereify/static/js/787.5b6c555d.chunk.js",
+    "index.html": "/whereify/index.html",
+    "main.d3d0d066.css.map": "/whereify/static/css/main.d3d0d066.css.map",
+    "main.ef1b2b98.js.map": "/whereify/static/js/main.ef1b2b98.js.map",
+    "787.5b6c555d.chunk.js.map": "/whereify/static/js/787.5b6c555d.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d3d0d066.css",
+    "static/js/main.ef1b2b98.js"
+  ]
+}
